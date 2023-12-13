@@ -16,13 +16,13 @@ class HeroAdapter(private val heroes: List<Hero>, private val listener: HeroSele
     class HeroViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         fun bind(hero: Hero, listener: HeroSelectionListener) {
             // Set the hero's name to the TextView
-            view.findViewById<TextView>(R.id.heroName).text = hero.name
+            view.findViewById<TextView>(R.id.heroName).text = hero.nombre
 
             // Get the ImageView reference
             val imageView = view.findViewById<ImageView>(R.id.heroImage)
 
             // Check if the imageURL is empty or null
-            if (hero.imageURL.isNullOrEmpty()) {
+            if (hero.imageURL.isEmpty()) {
                 // Load a local drawable image when imageURL is empty or null
                 imageView.setImageResource(R.drawable.dball)
             } else {

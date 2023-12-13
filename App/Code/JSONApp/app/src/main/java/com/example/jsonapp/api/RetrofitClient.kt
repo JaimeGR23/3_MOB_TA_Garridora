@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 // Retrofit client for making network requests
 object RetrofitClient {
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://esat23.free.beeceptor.com/")
+        .baseUrl("https://jaimemolamuchisimo.free.beeceptor.com/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
