@@ -15,6 +15,8 @@ class MyMainActivityFinal : AppCompatActivity(), HeroSelectionListener {
         setContentView(R.layout.activity_my_main_final)
     }
 
+
+
     override fun onHeroSelected(hero: Hero) {
         // Save Planet - SharedPreferences
         val sharedPreferences = getSharedPreferences("MyHeroSharedPref", MODE_PRIVATE)

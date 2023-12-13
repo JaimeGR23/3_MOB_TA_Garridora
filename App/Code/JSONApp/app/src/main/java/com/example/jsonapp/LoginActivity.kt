@@ -3,6 +3,7 @@ package com.example.jsonapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -27,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
                 val intent = Intent(this, MyMainActivityFinal::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "User or password are not correct", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "User or password is not correct", Toast.LENGTH_SHORT).show()
             }
         }
     }
