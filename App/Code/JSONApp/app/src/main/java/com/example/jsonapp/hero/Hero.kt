@@ -9,6 +9,4 @@ data class Hero(
     val poder_2: String,
     val efectos_especiales: String,
     val imageURL: String,
-
-
 )
